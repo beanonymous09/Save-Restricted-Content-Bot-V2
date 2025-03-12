@@ -1,5 +1,5 @@
 <h1 align="center">
-  Winter Release V3
+  Winter Release v3
 </h1>
 
 [Telegram](https://t.me/save_restricted_content_bots) | [See Recent Updates](https://github.com/devgaganin/Save-Restricted-Content-Bot-V2/tree/v3#updates)
@@ -16,6 +16,8 @@ see our live bot kn telegram to check the features [Advance Content Saver Bot](h
 ## 🔧 Features
 - Extract content from both public and private channels/groups.
 - Rename and forward content to other channels or users.
+- extract restricted content from other bots how to use format link like `https://b/botusername(without @)/message_id(get it from plus messenger)`
+- `/login` method along with `session` based login
 - Custom captions and thumbnails.
 - Auto-remove default video thumbnails.
 - Delete or replace words in filenames and captions.
@@ -23,12 +25,15 @@ see our live bot kn telegram to check the features [Advance Content Saver Bot](h
 - download yt/insta/Twitter/fb ect normal ytdlp supported sites that supports best format
 - Login via phone number.
 - **Supports 4GB file uploads**: The bot can handle large file uploads, up to 4GB in size.
+- file splitter if not premium string
 - **Enhanced Timer**: Distinct timers for free and paid users to limit usage and improve service.
 - **Improved Looping**: Optimized looping for processing multiple files or links, reducing delays and enhancing performance.
 - **Premium Access**: Premium users enjoy faster processing speeds and priority queue management.
 - ads setup shorlink ads token system
 - fast uploader via `SpyLib` using Telethon modules and `mautrix bridge repo`
+- Directly upload to `topic` in any topic enabled group
 
+  
 ## ⚡ Commands
 
 - **`start`**: 🚀 Start the bot.
@@ -77,7 +82,7 @@ To run the bot, you'll need to configure a few sensitive variables. Here's how t
 - **`YT_COOKIES`**: Yt cookies for downloading yt videos 
 - **`INSTA_COOKIES`**: If you want to enable instagram downloading fill cookiesn
 
-** How to get cookies ??** : use mozila firfox if on android or use chrome on desktop and download extension get this cookie or any Netscape Cookies (HTTP Cookies) extractor and use that 
+**How to get cookies ??** : use mozila firfox if on android or use chrome on desktop and download extension get this cookie or any Netscape Cookies (HTTP Cookies) extractor and use that 
 
 ### Monetization (Optional):
 - **`WEBSITE_URL`**: (Optional) This is the domain for your monetization short link service. Provide the shortener's domain name, for example: `upshrink.com`. Do **not** include `www` or `https://`. The default link shortener is already set.
@@ -183,7 +188,20 @@ Your credentials can be stolen if pushed to a public repository. Always keep the
 ---
 
 ## Updates
-
+<details>
+<summary><b>Update: 14 Feb 2025</b></summary>
+  Removed forced `login` user now can proceed with invite link if they do not want to login in bot due security concerns, BOT OWNER must have to fill `DEFAULT_SESSION` var when deploying.
+  done ✅
+</details>
+  
+<details>
+<summary><b>Update: 1 Feb 2025</b></summary>
+  
+- Added support to upload in `topics` (in group)
+- seperated function from direct loop of `get_msg` and `copy_message_with_chat_id` function
+- & some more advancements 
+  
+</details>
 <details>
 <summary><b>Update: 22 Jan 2025</b></summary>
   
